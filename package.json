@@ -1,5 +1,5 @@
 {
-  "name": "@flyweight.cloud/fw_request",
+  "name": "@flyweight.cloud/request",
   "version": "0.1.0",
   "description": "A tiny zero dependency http request library for JSON API's",
   "main": "lib/index.js",

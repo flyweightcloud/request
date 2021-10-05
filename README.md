@@ -1,4 +1,5 @@
 # Flyweight Request
+![Tests](https://github.com/flyweightcloud/request/actions/workflows/test/badge.svg)
 
 A tiny zero dependency library for Node.js designed for interacting with popular JSON API's
 
@@ -27,4 +28,11 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     }
 }
 
+```
+
+## Testing
+
+```
+npm install
+npm test
 ```
