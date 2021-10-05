@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
+    "lint": "tslint src/**/*.ts",
     "test": "jest --config jestconfig.json"
   },
   "author": "",
