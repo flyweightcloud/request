@@ -1,18 +1,18 @@
 import * as https from 'https'
 import * as http from 'http'
-import * as qs from 'querystring'
+
 import { IncomingMessage } from 'http'
 import { OutgoingHttpHeaders } from 'http2'
 
 const JSON_CONTENT_TYPES = ['application/json']
 
-interface FwRequestResult {
+export interface FwRequestResult {
     response:  IncomingMessage
     body: string
     json: any | null
 }
 
-interface FwRequestOpts {
+export interface FwRequestOpts {
     json?: any
     body?: string
     headers?: OutgoingHttpHeaders

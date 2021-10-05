@@ -5,7 +5,8 @@
         "rootDir": "./src",
         "outDir": "./lib",
         "sourceMap": true,
-        "strict": false
+        "strict": false,
+        "declaration": true
     },
     "include": ["src"],
     "exclude": [

@@ -1,19 +1,22 @@
 {
   "name": "@flyweight.cloud/request",
-  "version": "0.1.0",
-  "description": "A tiny zero dependency http request library for JSON API's",
+  "version": "0.1.1",
+  "description": "A tiny zero runtime dependency http request library for JSON API's",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf lib && tsc",
     "lint": "tslint src/**/*.ts",
     "test": "jest --config jestconfig.json"
   },
-  "author": "",
+  "author": "Mark Percival <m@mdp.im>",
   "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.10.3"
+  },
   "devDependencies": {
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.2",
     "jest": "^27.2.4",
+    "rimraf": "^3.0.2",
     "ts-jest": "^27.0.5",
     "tslint": "^6.1.3",
     "typescript": "^4.4.3"
