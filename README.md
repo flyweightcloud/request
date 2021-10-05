@@ -1,5 +1,5 @@
 # Flyweight Request
-![Tests](https://github.com/flyweightcloud/request/actions/workflows/test/badge.svg)
+[![Tests](https://github.com/flyweightcloud/request/actions/workflows/test.yml/badge.svg)](https://github.com/flyweightcloud/request/actions/workflows/test.yml)
 
 A tiny zero dependency library for Node.js designed for interacting with popular JSON API's
 
