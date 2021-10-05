@@ -4,7 +4,7 @@ import * as http from 'http'
 import { IncomingMessage } from 'http'
 import { OutgoingHttpHeaders } from 'http2'
 
-const JSON_CONTENT_TYPES = ['application/json']
+const JSON_CONTENT_TYPES = ['application/json', 'application/javascript']
 
 export interface FwRequestResult {
     response:  IncomingMessage
@@ -65,6 +65,7 @@ function buildHttpOpts(url: string, fwOpts?: FwRequestOpts): https.RequestOption
 
     if (fwOpts.json) {
         headers['Content-Type'] = 'application/json';
+        headers.Accept = 'application/json';
         dataStr = JSON.stringify(fwOpts.json);
         headers['Content-Length'] = dataStr.length;
     } else if (fwOpts.body) {

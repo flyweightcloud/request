@@ -1,3 +1,7 @@
+## v0.1.3 Fix JSON content-type
+
+- add proper content-type - 'javascript'
+
 ## v0.1.2 Add types for node
 
 - Proper deploy script
