@@ -85,7 +85,7 @@ function buildHttpOpts(url: string, fwOpts?: FwRequestOpts): https.RequestOption
 }
 
 function extractJSON(response: IncomingMessage, body: string): any | null {
-    if (JSON_CONTENT_TYPES.includes(response.headers['content-type'])) {
+    if (JSON_CONTENT_TYPES.find((t) => response.headers['content-type'].indexOf(t) === 0)) {
         return JSON.parse(body)
     }
     return null
